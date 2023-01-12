@@ -4,8 +4,24 @@
 }
 
 .container {
+    display: flex;
     width: 900px;
     height: 450px;
-    margin:50px auto 0 auto;
+    margin: 50px auto 0 auto;
     background-color: #ffc;
+}
+
+header,
+figure {
+    width: 50%;
+    height: 100%;
+}
+
+header {
+    background-color: rgb(200, 132, 132);
+}
+
+
+figure{
+    background-color: rgb(135, 158, 227);
 }

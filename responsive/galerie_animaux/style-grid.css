@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.galerie {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    border: 5px solid grey;
+}
+
+.galerie figure {
+    width: 100%;
+}
+
+
+.galerie img {
+    width: 100%;
+}
+
+@media (min-width:769px) {
+    .galerie {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:992px) {
+    .galerie {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

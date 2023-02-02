@@ -1,0 +1,141 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    /* en mobile = largeur 100   */
+    margin-bottom: 100px;
+}
+
+.hero {
+    height: auto;
+    /* provisoire */
+    background-color: rgb(224, 224, 224);
+}
+
+.container {
+    /* en mobile = largeur 100   */
+}
+
+/* === HERO ========================== */
+
+.hero-illustration {
+    /* provisoire */
+    height: 500px;
+    background-color: rgb(186, 168, 168);
+}
+
+.hero-presentation {
+    /* provisoire */
+    height: 400px;
+    background-color: rgb(122, 87, 87);
+}
+
+/* === ABOUT ========================== */
+
+.about-header {
+    /* provisoire */
+    height: 80px;
+    background-color: rgb(126, 157, 145);
+}
+
+.about-box-1 {
+    height: 400px;
+    background-color: rgb(166, 192, 182);
+}
+
+.about-box-2 {
+    height: 400px;
+    background-color: rgb(187, 235, 217);
+}
+
+.about-box-3 {
+    height: 400px;
+    background-color: rgb(143, 186, 169);
+}
+
+/* ==== SKILLS ==================== */
+
+.skills-1 {
+    height: 400px;
+    background-color: rgb(222, 173, 207);
+}
+
+.skills-2 {
+    height: 400px;
+    background-color: rgb(189, 153, 178);
+}
+
+.skills-3 {
+    height: 400px;
+    background-color: rgb(201, 131, 180);
+}
+
+.skills-4 {
+    height: 400px;
+    background-color: rgb(203, 166, 192);
+}
+
+@media (min-width:768px) {
+
+    .hero {
+        height: 700px;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .container-flex {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    .hero-illustration {
+        width: 40%;
+        height: 100%;
+    }
+
+    .hero-presentation {
+        width: 60%;
+        height: 100%;
+    }
+
+    .about-header {
+        width: 100%;
+    }
+
+    .about-box-1,
+    .about-box-2,
+    .about-box-3 {
+        width: 33.33%;
+        height: auto;
+        aspect-ratio: 2/2;
+    }
+
+    .skills-1,
+    .skills-2,
+    .skills-3,
+    .skills-4 {
+        width: 50%;
+    }
+}
+
+
+@media (min-width:900px) {
+
+    .skills-1,
+    .skills-2,
+    .skills-3,
+    .skills-4 {
+        width: 25%;
+        height: auto;
+        aspect-ratio: 4/3;
+    }
+
+}

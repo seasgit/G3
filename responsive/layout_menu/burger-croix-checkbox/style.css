@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
 }
@@ -27,12 +29,48 @@ html {
     width: 40px;
     height: 5px;
     background: #000;
+    cursor: pointer;
+}
+
+.btn-menu:before,
+.btn-menu::after {
+    content: "";
+    display: block;
+    width: inherit;
+    height: inherit;
+    background: inherit;
+    transition: 0.4s;
+}
+
+.btn-menu:before{
+    transform: translateY(-10px);
+}
+.btn-menu::after {
+    transform: translateY(6px);
 }
 
 /* quand checkbox est coché , on agit sur .navigation */
 #checkbox:checked ~ .navigation {
     transform: translateX(0);
 }
+
+#checkbox:checked ~ .btn-menu {
+    background: transparent;    
+}
+
+#checkbox:checked ~ .btn-menu::before {
+   transform: rotate(45deg);
+   background: white;
+}
+
+#checkbox:checked ~.btn-menu::after {
+    transform: rotate(-45deg) translate(2px,-4px);
+    background: white;
+}
+
+
+
+
 
 .navigation {
     position: fixed;

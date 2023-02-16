@@ -21,11 +21,13 @@ html {
     top: 0;
     width: 250px;
     height: fit-content;
-    background: #444;
+    padding-top: 20px;
+    background: rgb(68,64,0);
     text-align: center;
     transform-origin: 50% 10%;
     transform: rotate(180deg);
-    transition: 0.4s;
+    transition: 1s;
+    border-radius: 50px 50px 0 0;
 }
 
 .links:hover {
@@ -34,9 +36,8 @@ html {
 
 .links p {
     color: white;
-    font-size: 22px;
+    font-size: 30px;
     font-family: sans-serif;
-    line-height: 3;
     transform: rotate(180deg);
     margin-bottom: 20px;
 }

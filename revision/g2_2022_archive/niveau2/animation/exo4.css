@@ -1,0 +1,56 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: archivo;
+    src: url(./font/archivoblack.woff);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 800px;
+    height: 300px;
+    border:8px solid rgb(136, 136, 136);
+    overflow: hidden;
+}
+
+section p {
+    font-family: archivo;
+    font-size: 110px;
+    font-weight: normal;
+    color: rgb(238, 238, 238);
+}
+
+.texte1 {
+    transform:translatex(1000px);
+    animation: anim1 10s linear infinite;
+}
+
+.texte2 {
+    transform: translateX(-1000px);
+    animation: anim2 10s linear infinite;
+}
+
+
+@keyframes anim1 {
+    50% { transform: translateX(-1000px); }
+    100% {transform: translateX(1000px); }
+}
+
+@keyframes anim2 {
+    50% { transform: translateX(1000px); }
+    100% {transform: translateX(-1000px); }
+}

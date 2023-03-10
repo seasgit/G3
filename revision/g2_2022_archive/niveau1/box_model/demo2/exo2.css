@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Sedgwick+Ave&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    /* flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box model */
+    width: 700px;
+    height: 500px;
+    margin: 100px auto 0 auto;
+    /* décoratif */
+    background: linear-gradient(to bottom, #00e6f2 0%, #008293 100%);
+}
+
+
+section h1 {
+    font-size: 45px;
+    font-family: 'Sedgwick Ave', cursive;
+    color:aliceblue;
+    font-weight: normal;
+    letter-spacing: 2px;
+}

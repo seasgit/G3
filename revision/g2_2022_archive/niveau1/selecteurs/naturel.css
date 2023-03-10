@@ -1,0 +1,34 @@
+/* 
+    Les sélecteurs naturels référencent des balises html 
+*/
+
+span {
+    color:red;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+/* référence les p enfants directs du body */
+
+body > p {
+    font-family: sans-serif;
+}
+
+/* tous les p */
+p {
+   font-size: 20px; 
+}
+
+/* on référence les span de paragraphes */
+p span {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+section {
+    padding-top: 10px;
+    padding-left: 10px;
+    border-top: 1px solid black;
+    width: 400px;
+}

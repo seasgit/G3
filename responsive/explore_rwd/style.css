@@ -37,7 +37,7 @@
 .explore {
    font-family: 'Lobster', sans-serif; 
    font-size: 80px;
-   color:var(--color-title);
+   color: var(--color-title);
    line-height: 0.8;
    margin-bottom: 20px;
 }

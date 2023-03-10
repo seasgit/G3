@@ -1,0 +1,26 @@
+* {
+    margin: 0;  padding: 0; box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+section {
+    position: relative;
+    width: 500px; height: 400px;
+    background: #d3d3d3;
+}
+
+section div {
+   width: 80px; height: 80px; 
+   position: absolute; 
+}
+
+.b1 { background: blue; top: 0; left: 0;}
+.b2 { background: red; top: -40px; right: -40px;}
+.b3 { background: green; bottom: 0; left: 0;}
+.b4 { background: hotpink; bottom: 20px; right: 20px;}

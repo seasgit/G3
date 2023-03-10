@@ -1,0 +1,26 @@
+/* l'étoile veut dire => tous les éléments html */
+
+/*  reset des marges et espaces internes */
+/* 
+    Attention ! les paddings et bordures augmentent les dimensions d'une boite.
+*/
+* {
+    margin: 0;
+    padding: 0;
+    /* rustine, hack pour éviter l'augmentation */
+    box-sizing: border-box;
+}
+
+section {
+    /* box model => largeur, hauteur, marges, espace interne, bordure */
+    width: 400px;
+    height: 150px;
+    margin-top: 100px;
+    margin-left: 100px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    border:2px solid black;
+    /* décoratif */
+    background: rgb(236, 205, 240);
+}

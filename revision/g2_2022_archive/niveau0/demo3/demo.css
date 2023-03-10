@@ -1,0 +1,17 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    color:rgb(85, 219, 58);
+    font-size: 50px;
+    font-family: sans-serif;
+    /* text-align: center; */
+    text-shadow: 0 10px 15px #b4b4b4;
+}
+
+
+img {
+    width: 50%;
+    text-align: center;
+}

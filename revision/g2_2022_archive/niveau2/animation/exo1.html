@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        div {
+            margin: 100px auto 0 auto;
+            display: flex;
+            width: 100px;
+            height: 100px;
+            background: rgb(173, 46, 46);
+            transition: 0.5s;
+            animation: tourne 1s 3s linear forwards;
+        }
+
+        span {
+            margin: auto;
+            color: aliceblue;
+            font-size: 40px;
+            transition: 0.5s;
+        }
+
+        @keyframes  tourne {
+            100% { transform: rotate(360deg) scale(2)}
+        }
+    </style>
+</head>
+
+<body>
+    <div><span>A</span></div>
+</body>
+
+</html>

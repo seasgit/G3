@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    margin: 50px auto 0 auto;
+    width: 950px;
+    height: auto;
+}
+
+.header {
+    padding: 10px 0 10px 0;
+}
+
+.header h1 {
+    text-align: center;
+}
+
+.galerie {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* une figure prend un peu moins d'un tiers de la largeur du parent */
+.galerie figure {
+    padding: 20px;
+    width: 31%;
+    box-shadow: 0 10px 15px rgb(202, 202, 202);
+}
+
+/* l'image d'une figure doit être contenu dans cette largeur */
+.galerie figure img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover; /* pour garder l'homotéthie de l'image
+}

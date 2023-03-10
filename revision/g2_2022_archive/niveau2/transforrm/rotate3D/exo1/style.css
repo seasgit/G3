@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-card {
+    width: 450px;  height: 600px;
+    margin: 100px auto 0 auto;
+    perspective: 1000px;
+}
+
+
+.main-card:hover .card-container{
+    transform: rotateY(180deg);
+}
+
+.card-container {
+    width: 100%; height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: .5s;
+    /* -webkit-transform-style: preserve-3d; */
+}
+
+.face{
+    display: flex;
+    position: absolute; left: 0;top: 0;
+    width: 100%; height: 100%;
+    backface-visibility: hidden;
+    /* -webkit-backface-visibility: hidden; */
+}
+
+.face h1 {
+    margin: auto;
+    font-size: 50px;
+    color:white;
+}
+
+.face-recto {
+    background: #ff8800;
+}
+
+.face-verso {
+    background: green;
+    transform: rotateY(180deg);
+}
+
+
+

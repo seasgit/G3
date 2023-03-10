@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: archivo;
+    src: url(./font/archivoblack.woff);
+}
+
+.main-card {
+    width: 450px;  height: 600px;
+    margin: 100px auto 0 auto;
+    perspective: 1000px;
+}
+
+
+.main-card:hover .card-container{
+    transform: rotateY(180deg);
+}
+
+.card-container {
+    width: 100%; height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1s;
+    /* -webkit-transform-style: preserve-3d; */
+}
+
+.face{
+    display: flex;
+    position: absolute; left: 0;top: 0;
+    width: 100%; height: 100%;
+    backface-visibility: hidden;
+    /* -webkit-backface-visibility: hidden; */
+}
+
+.face h1 {
+    margin: auto;
+    font-size: 50px;
+    color:white;
+}
+
+.face-recto {
+    background: url(./img/pexels-darwis-alwan-1995730.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.face-verso {
+    position: relative;
+    background: green;
+    transform: rotateY(180deg);
+}
+
+.face-verso img {
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.filtre1,
+.filtre2 {
+    position: absolute;
+    height: 100%;
+    transform: skewX(20deg);
+}
+
+.filtre1 {
+    width: 70%;
+    left: 10%;
+    background-color: rgba(0, 100, 0, 0.363);
+}
+
+
+.filtre2 {
+    width: 25%;
+    left: 18%;
+    background-color: rgba(201, 230, 97, 0.363);
+    transition: 0.5s;
+}
+
+
+.textes {
+    position: relative;
+    left: 50px;
+    top: 80px;
+}
+
+.textes span {
+    display: block;
+    font-family: sans-serif;
+    font-size: 50px;
+    font-weight: normal;
+}
+
+.textes span:nth-of-type(1) {
+    font-family: archivo;
+    color: white;
+}
+
+.textes span:nth-of-type(2) {
+    color: rgb(205, 224, 174);
+}
+
+
+.textes span:nth-of-type(3) {
+    font-family: archivo;
+    color: rgb(18, 226, 18);
+}
+
+.textes p {
+    color: white;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    font-size: 20px;
+    transform: translateY(-500px);
+    transition: 0.5s;
+}
+
+
+
